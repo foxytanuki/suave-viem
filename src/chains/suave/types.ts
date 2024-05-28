@@ -42,10 +42,12 @@ type ConfidentialOverrides = {
 
 type ConfidentialComputeRequestOverrides = ConfidentialOverrides & {
   confidentialInputs?: Hex
+  envelope?: boolean
 }
 
 type ConfidentialComputeRecordOverrides = ConfidentialOverrides & {
   confidentialInputsHash?: Hash
+  envelope?: boolean
 }
 
 export type SuaveBlockOverrides = {} // Add any specific block overrides if necessary for Suave
